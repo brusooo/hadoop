@@ -1,0 +1,41 @@
+core site
+<configuration>
+  <property>
+    <name>fs.default.name</name>
+    <value>hdfs://localhost:9820</value>
+  </property>
+</configuration>
+
+
+hdfs-site
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>file:///C:/hadoop-3.3.5/hadoop-3.3.5/data/dfs/namenode</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>file:///C:/hadoop-3.3.5/hadoop-3.3.5/data/dfs/datanode</value>
+  </property>
+</configuration>
+
+mapred-site
+<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+    <description>mapreduce framework name</description>
+  </property>
+</configuration>
+
+yarn-site
+<property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+  <description>Yarn Node Manager Aux Service</description>
+</property>
+</configuration>
