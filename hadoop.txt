@@ -39,3 +39,5 @@ yarn-site
   <description>Yarn Node Manager Aux Service</description>
 </property>
 </configuration>
+
+google-cloud-sdk\bin\dev_appserver.py "path"
